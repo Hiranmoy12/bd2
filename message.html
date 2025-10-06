@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>For Tanisha</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="video-bg">
+      <video id="bg-video" autoplay muted loop playsinline src="assets/bubbles.mp4"></video>
+    </div>
+    <div id="bubbles" class="bubbles" aria-hidden="true"></div>
+
+    <main class="container message-page">
+      <h1 class="title">A Message For You</h1>
+      <pre id="message" class="message typewriter" aria-live="polite"></pre>
+      <div class="actions">
+        <a class="btn" href="index.html">Back</a>
+        <button id="replay" class="btn secondary" type="button">Replay</button>
+      </div>
+      
+      <div class="music-controls">
+        <button id="music-toggle" class="btn music-btn" type="button" title="Play/Pause Music">🎵</button>
+        <button id="volume-toggle" class="btn music-btn" type="button" title="Mute/Unmute">🔊</button>
+      </div>
+    </main>
+
+    <script src="js/common.js"></script>
+    <script src="js/message.js"></script>
+    <script src="js/overlay.js"></script>
+  </body>
+</html>

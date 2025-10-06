@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tanisha Birthday Countdown</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="video-bg">
+      <video id="bg-video" autoplay muted loop playsinline src="assets/bubbles.mp4"></video>
+    </div>
+    <div id="bubbles" class="bubbles" aria-hidden="true"></div>
+
+    <main class="container">
+      <h1 class="title">A SPECIAL DAY FOR YOU</h1>
+
+      <section id="countdown" class="countdown" aria-live="polite" aria-atomic="true">
+        <div class="time"><span id="days">0</span><small>Days</small></div>
+        <div class="time"><span id="hours">0</span><small>Hours</small></div>
+        <div class="time"><span id="minutes">0</span><small>Minutes</small></div>
+        <div class="time"><span id="seconds">0</span><small>Seconds</small></div>
+      </section>
+
+      <section id="finished" class="finished hidden">
+        <h1 class="big pop">HAPPIEST BIRTHDAY TO MY FAVOURITE PERSON ❤</h1>
+        <a class="btn next pop" href="message.html">Click Next</a>
+      </section>
+    </main>
+
+    <script src="js/common.js"></script>
+    <script src="js/countdown.js"></script>
+    <!-- Attractive background overlay (runtime-injected, no changes to existing code paths) -->
+    <script src="js/overlay.js"></script>
+  </body>
+</html>
